@@ -1,0 +1,118 @@
+0	UI kit · Look & feel themes	Metal themes (Default, HighContrast, GreenMetal, Sandstone, Large variants) built on FontUIResource/ColorUIResource.
+1	Actions · Main window toolbar & remote actions	JFTP main frame wiring of toolbar/popup menus to remote-file actions (Download, ChangeRemoteDirectory, Email, NewSession…).
+2	Remote · Remote file pane, table model & sorting	RemotePane, RemoteFileTableModel, RemoteFileComparator, TransferObject around com.myjavaworld.ftp.RemoteFile.
+3	Actions · Enable-state & selection queries	getCurrentSession/isConnected/getSelected*File used by menus and actions; download-and-unzip / zip-and-upload entry points.
+4	Core · Application startup & macOS integration	JFTPApplication bootstrap, OSXAdapter/OSXAdapterOld, JFTPUtil, ResourceLoader.getBundle.
+5	Imports · Swing scroll/combo + shared dialog imports	Import-hub cluster: MComboBox, MScrollPane, JFTPHelp2 and the dialogs importing them (inferred grouping, not one feature).
+6	Session · FTPSession core & action dispatch	FTPSession class node, SwingWorker, ActionEvent hub that every action routes through.
+7	Session · Background directory & delete operations	FTPSession SwingWorker jobs: setBusy, set/upRemoteWorkingDirectory, deleteLocalFiles/deleteRemoteFiles.
+8	Prefs · JFTPPreferences store (getters/setters)	Central preferences object: buffer size, client/list-parser class, timeout, passive mode, certificate stores.
+9	Imports · Layout & label helpers (GridBag, MLabel, GUIUtil)	Import-hub cluster: MLabel, GUIUtil, GridBagLayout/Constraints, Insets used by most dialogs.
+10	Session · Transfers & error handling	FTPSession upload/download/delete/chmod plus connectionException/ftpException and status-bar error reporting.
+11	Dialogs · Common buttons, help & security warning	MButton, ResourceLoader.getString, JFTPHelp2.enableHelp, SecurityWarningDlg — shared dialog plumbing.
+12	Dialogs · Text-field forms (rename, certificate prefs)	MTextField with RenameLocalFileDlg, RenameRemoteFileDlg, CertificatePrefsPanel.
+13	Menus · Menu bar (FTP, Local, Remote, Tools)	MMenu/MMenuItem and prepareMenuItems in FTPMenu, LocalSystemMenu, RemoteSystemMenu, ToolsMenu.
+14	UI kit · Base dialog & progress dialog	MDialog (escape/close handling) and ProgressDialog.
+15	Dialogs · Connection & favorite properties	ConnectionDlg and FavoritePropertiesDlg tabs (General/SSL), IntegerField.
+16	Prefs · Preferences dialog, proxy & general panels	PreferencesDlg, ProxyPrefsPanel, GeneralConnectionPrefsPanel, showError/showInformation.
+17	Actions · Local file actions	Edit/Print/Open/Delete/ChangeLocalDirectory actions wired into toolbar and local menus.
+18	Session · RemoteHost model & session title	RemoteHost getters, populateScreen in connection dialogs, connect/updateSessionTitle.
+19	Favorites · Favorites manager dialog	FavoritesDlg with FavoritesListModel: add/edit/connect/save favorites.
+20	UI kit · Glass pane & mouse/key handling	MGlassPane busy overlay, EditPopupMenu triggers, MouseEvent/KeyEvent hubs.
+21	SSL · Certificate manager dialog	CertificateManagerDlg: import/delete client and server certificates.
+22	Dialogs · Checkbox forms (local filter, advanced conn.)	MCheckBox with LocalFileFilterDlg and AdvancedConnectionPrefsPanel / Advanced tabs.
+23	Local · LocalFile model & directory combo	LocalFile, DirectoryComboBoxModel, roots/parent navigation in LocalPane.
+24	UI kit · Text component & edit popup	MTextComponent with cut/copy/paste EditPopupMenu.
+25	UI kit · Labeled text field	MLabelTextField with character-case document model.
+26	Imports · JPanel/form shared imports	Import-hub cluster linking dialog files through javax.swing.JPanel (inferred grouping).
+27	UI kit · Text area	MTextArea with maximum-length document.
+28	Core · Resource bundles & i18n	ResourceLoader, ResourceBundle, LocalePrefsPanel, HelpMenu, SoftwareUpdate prefs.
+29	Dialogs · Radio-button forms (download&unzip, security)	MRadioButton with DownloadAndUnzipDlg and SecurityPrefsPanel.
+30	Zip · Unzip engine & zip events	Unzip, ZipListener, progress events; used by DownloadAndUnzipAction.
+31	Imports · Text/mouse/clipboard shared imports	Import-hub: MouseListener, Document, Transferable shared by text widgets.
+32	Menus · Local popup menu & upload actions	LocalSystemPopupMenu, MPopupMenu, UploadAs/ZipAndUpload actions.
+33	UI kit · Password field	MPasswordField with maximum length.
+34	Core · Drag & drop transfer	DnDTransferHandler, LocalFileTransferable, RemoteFileTransferable, DataFlavor.
+35	Prefs · Transfer modes (ASCII/binary types)	TransferModesPrefsPanel with TypesTableModel and renderer.
+36	Session · Lifecycle, title & status updates	FTPSession constructor, connectionOpened/Closed, updateTitle/updateToolBar/addStatus.
+37	Zip · Zip engine	Zip with file filter, addEntry/addFile; used by ZipAndUploadAction.
+38	UI kit · List & default cell renderers	MDefaultRenderer, MList, DriveCellRenderer, LocaleCellRenderer.
+39	Session · RemoteHost setup & connect commands	RemoteHost construction/setters, ConnectAction/ConnectionDlg OK, addToFavorites.
+40	Local · Local file pane	LocalPane: selection, double-click, right-click popups.
+41	Core · File filters, refresh & selection commands	JFTP/FTPSession show/set local & remote filters, refresh, select-all/invert.
+42	Remote · Remote file properties dialog	RemoteFilePropertiesDlg: size/contents computation via FTPClient.
+43	UI kit · Document models (plain, single-line, integer)	MPlainDocument, SingleLineDocument, IntegerDocument.
+44	Util · System/OS detection & About dialog	SystemUtil.isMac/getOSName with AboutDlg.
+45	Local · Local file properties dialog	LocalFilePropertiesDlg: size and contents.
+46	Favorites · Favorites persistence (encrypted)	FavoritesManager get/save/add favorites with a cipher; serializable RemoteHost.
+47	Util · File change monitor	FileChangeMonitor/Event/Listener (watch edited temp files, re-upload on change).
+48	Util · Progress events & file I/O	ProgressEvent, FileUtilities, stream/listener imports shared by zip and keystore.
+49	UI kit · Icons, actions & table header renderer	Icon/Action hubs, MTableHeaderRenderer, MMenuItem/MCheckBox/MRadioButton icons.
+50	Core · Session window (internal frame)	SessionPanel inside MInternalFrame with glass pane.
+51	Dialogs · Help key & titled dialogs	enableHelpKey/setTitle across DownloadAsDlg, CertificateDlg, FavoritesDlg.
+52	SSL · Certificate detail view	CertificatePane and DNParser (issuer/subject panels).
+53	SSL · Trust manager (server cert validation)	JFTPTrustManager: checkServerTrusted, host/date validity.
+54	Session · Status/log window	StatusWindow logging commands sent, replies, dropped connections.
+55	UI kit · Table cell renderers (file rows)	MTableCellRenderer, Local/RemoteFileCellRenderer.
+56	SSL · KeyStore manager	KeyStoreManager: client/server certificate stores.
+57	UI kit · SwingWorker	Background-thread helper (with ThreadVar).
+58	UI kit · Tree & image renderers	MTree, ImageCellRenderer.
+59	Core · Splash screen & applet	SplashWindow and JFTPApplet entry.
+60	Local · Local file filter (regex/date)	LocalFileFilter with RegexFilter/DateFilter.
+61	UI kit · Indented directory renderer	IndentIcon and DirectoryCellRenderer.
+62	UI kit · Frame & toolbar buttons	MFrame and JFTPToolBar button creation.
+63	Remote · Remote file filter dialog	RemoteFileFilterDlg with regex/date filters.
+64	Imports · Formatting & border shared imports	Import-hub: MessageFormat, BorderFactory, NumericCellRenderer, StatusBar.
+65	SSL · Key manager (client certificates)	JFTPKeyManager: alias selection and private keys.
+66	Util · Zip & status events	ZipEvent and StatusEvent (EventObject).
+67	Menus · Transfer mode menu	TransferModeMenu with MRadioButtonMenuItem.
+68	Prefs · Prefs panels ↔ preference values	populateScreen in prefs panels reading email/proxy/local dir.
+69	Dialogs · License agreement	LicenseAgreementDlg loading license URL.
+70	Actions · Tools: manage certificates & favorites	ManageCertificatesAction and ManageFavoritesAction in ToolsMenu.
+71	Actions · Delete actions & table key bindings	Delete local/remote actions and configureTable delete key.
+72	Local · Local file attributes & comparison	LocalFile isDirectory/getDisplayName and LocalFileComparator compare*.
+73	Prefs · UI / look-and-feel panel	UIPrefsPanel with installed look-and-feels.
+74	Local · Local file table model	LocalFileTableModel.
+75	UI kit · Base table	MTable with popup triggers.
+76	Util · Progress & status listeners	ProgressListener and StatusListener interfaces.
+77	SSL · SSL context factory	JFTPSSLContext.getSSLContext.
+78	UI kit · Desktop pane (tile/cascade)	MDesktopPane window arrangement.
+79	Dialogs · Change local directory	ChangeLocalDirectoryDlg.
+80	Dialogs · Change remote directory	ChangeRemoteDirectoryDlg.
+81	Dialogs · Execute FTP command	ExecuteCommandDlg.
+82	Dialogs · New local directory	NewLocalDirectoryDlg.
+83	Core · Window bounds & exit	JFTP exit, window bounds saved in preferences.
+84	UI kit · Tree node with ID	IDTreeNode used by PreferencesDlg navigation.
+85	Local · Local file sort order	LocalFileComparator sort/order.
+86	Dialogs · New local file	NewLocalFileDlg.
+87	Dialogs · New remote directory	NewRemoteDirectoryDlg.
+88	Dialogs · New remote file	NewRemoteFileDlg.
+89	SSL · Certificate table model	CertificateTableModel over a KeyStore.
+90	Dialogs · Zip and upload	ZipAndUploadDlg.
+91	Core · Preferences load/save & license check	JFTP load/savePreferences, showLicenseAgreement.
+92	Favorites · Favorite entry	Favorite value object (compareTo/equals/hashCode).
+93	Session · Status bar (speed, elapsed)	StatusBar.
+94	Prefs · Software update panel	SoftwareUpdatePrefsPanel.
+95	Dialogs · Upload as	UploadAsDlg.
+96	UI kit · Option pane	MOptionPane line-wrapping JOptionPane.
+97	UI kit · Table/popup sizing overrides	getPreferredSize/viewport overrides in RemotePane, TransferModes, MPopupMenu.
+98	Local · Local file permissions & filter accept	LocalFile canRead/canWrite/isHidden, filter accept.
+99	Util · Random key generator	RandomKeyGenerator (SecureRandom).
+100	Actions · Disconnect	DisconnectAction.
+101	Actions · Email local file	EmailLocalFileAction.
+102	Actions · Reconnect	ReconnectAction.
+103	Actions · Abort worker	AbortAction SwingWorker.
+104	Actions · Download-as worker	DownloadAsAction SwingWorker.
+105	Actions · Edit remote file worker	EditRemoteFileAction SwingWorker.
+106	Actions · Open remote file worker	OpenRemoteFileAction SwingWorker.
+107	Actions · Upload-as worker	UploadAsAction SwingWorker.
+108	Util · String utilities	StringUtilities.getFormattedMessage.
+109	Prefs · Date/time format	JFTPPreferences date/time format with LocalePrefsPanel.
+110	Local · Local table viewport override	LocalPane MTable override.
+111	Util · Hex encoder	Encoder.hexEncode.
+112	Core · Constants	JFTPConstants (product name, website, version).
+113	Build · Launcher script	src/main/scripts/jftp.sh.
+114	Build · Maven POM	pom.xml project node.
+115	Docs · gui package-info	package-info.java.
+116	Docs · jftp package-info	package-info.java.
+117	Docs · util package-info	package-info.java.
