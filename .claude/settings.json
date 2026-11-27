@@ -1,0 +1,35 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/labuser/.cache/legacy-codebase-workflows/tools/context7-env/bin/python",
+            "args": [
+              "-c",
+              "import pathlib,runpy,sys; p=pathlib.Path.cwd(); root=next((r for r in (p,*p.parents) if (r/'tools/context7/project.json').is_file()),None); sys.exit(0) if root is None else None; sys.path.insert(0,str(root/'tools')); runpy.run_path(str(root/'tools/context7_refresh_hook.py'),run_name='__main__')"
+            ],
+            "timeout": 30
+          }
+        ],
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit|Bash"
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/labuser/.cache/legacy-codebase-workflows/tools/context7-env/bin/python",
+            "args": [
+              "-c",
+              "import pathlib,runpy,sys; p=pathlib.Path.cwd(); root=next((r for r in (p,*p.parents) if (r/'tools/context7/project.json').is_file()),None); sys.exit(0) if root is None else None; sys.path.insert(0,str(root/'tools')); runpy.run_path(str(root/'tools/context7_refresh_hook.py'),run_name='__main__')"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
