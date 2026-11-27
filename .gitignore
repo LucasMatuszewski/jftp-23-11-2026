@@ -3,3 +3,4 @@
 /docs/repo-maps/artifacts/
 /docs/repomix/artifacts/
 /docs/code-graph/artifacts/
+__pycache__/

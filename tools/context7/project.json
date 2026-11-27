@@ -1,0 +1,41 @@
+{
+  "libraryId": "/local/jftp",
+  "docsRoot": "docs",
+  "excludes": [
+    ".agents",
+    ".claude",
+    ".codex",
+    ".github",
+    ".vscode",
+    "tools",
+    "mcp.json",
+    ".mcp.json",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "docs/repo-maps",
+    "repo-maps",
+    "docs/RepoMix",
+    "RepoMix",
+    "docs/analysis",
+    "analysis",
+    ".cursor",
+    ".gemini",
+    "opencode.json",
+    "opencode.jsonc",
+    "docs/repomix",
+    "docs/code-graph/artifacts",
+    "docs/code-graph/jftp-code-graph.html"
+  ],
+  "engine": {
+    "parser": "auto",
+    "embed_provider": "local-python",
+    "embed_model": "minishlab/potion-code-16M-v2",
+    "model_revision": "e9d2a44ca6a05ac6685f3b23709ea57eb7352d5b",
+    "model_cache": "/home/labuser/.cache/legacy-codebase-workflows/models"
+  },
+  "defaultMode": "hybrid",
+  "consent": {
+    "modelDownload": true,
+    "remoteEndpoint": null
+  }
+}

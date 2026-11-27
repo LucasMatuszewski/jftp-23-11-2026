@@ -1,0 +1,32 @@
+{
+  "origin": "EdukeyTeam/agent-toolbox: legacy-codebase-workflows",
+  "files": {
+    "scripts/context7_backend.py": "08cdf26c82db5b270e1a996027c038fa8fd948b4c51a2f6b037a939359f20a2b",
+    "scripts/repo_files.py": "62d0f132e484675214ce90f9aadf8ecf824c94bfecee7e9e6e8af03e716e603d",
+    "scripts/legacy_common.py": "0ccc15759c7571130369195bbbd7b2f26b71f33fbe68461a9d24cdbf26312fee",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "THIRD_PARTY.md": "4bdc53192124de56f9877d267ece9cff7eab1335b84acb4f06f4d1cad4426167",
+    "scripts/local_context/__init__.py": "0b35ae1598342a8e886aa0a61a38f65a2282ced835279664eed55e03a776ba9a",
+    "scripts/local_context/__main__.py": "d9536d4924712ac802f9176efb38f7c7ce898bec6c5f54280893233174f010dd",
+    "scripts/local_context/assemble.py": "09c69ede9eeb24a5fdca9c18463a5cf8230d4e12391eb0ed93f65d6c273b7b2f",
+    "scripts/local_context/chunk.py": "6b1a1301b8d9d7b315c1b8ceee66fcef2dc857c98823fee09288a18abb98729c",
+    "scripts/local_context/cli.py": "781c764896a3f6e343924a7d3c42401f396a98a3d86c918ad9a6964e149f5d2a",
+    "scripts/local_context/decode.py": "3583f3a3ffce5fbdab82ad485b487cba42f2776d415fac3c8cf5f53637286a9c",
+    "scripts/local_context/discover.py": "c93593d4ae2aa6f352ac935b8d83f0b7b6b5fdc88397f8a9e36fbb2dc8111f2c",
+    "scripts/local_context/embed.py": "a30d83fdd4cf5682fa94bb7a166bc11a823a13f1a9ba2c1f9544a07b571dbce5",
+    "scripts/local_context/engine.py": "e52a80bc56c03922b7f9d2e6ec79a2c383252aea276b9701bfbab0d26271ebf2",
+    "scripts/local_context/freshness.py": "fa0fdd62ce362dd0f05a80f74c1f0d6ce1b7cb7df0c63e8a46ac114f4dfb9c11",
+    "scripts/local_context/http_api.py": "6395f4b0e224f8826085c330dc78b1b8cddf5f456fe5f4d024f6539895773885",
+    "scripts/local_context/protocol.py": "1f509e03e0cee8d06d8efca17c2af95077cad79789d41df8709c883b7ac3a919",
+    "scripts/local_context/search.py": "bd6ac1028fe3552029621d4b3b5341cddf3b77b4ea64be9ca54f448b86a0aea9",
+    "scripts/local_context/store.py": "c016ee89946efe372118a0f5ea22004bde2fb0c014273887852a8eb7ea4c1111",
+    "scripts/local_context/symbols.py": "edbc7fbfc1283a09ed01204df704e7f2a60f7df78ca0809c75a0fd1f4a4ead2b",
+    "scripts/local_context/units.py": "fad2d755b6168183fcdc3c18bffcb2f2f5aadd799a22839972e35b4a22f635e7",
+    "scripts/local_context/vectors.py": "e53755dad2e62f7a1c6083733d733fc6783ebe49e485c0075430b46cca5dc392",
+    "scripts/retrieval/embed.mjs": "4764b461f206916201e7f8648a31415f81e3d113cacc9c2893dd786cad309525",
+    "scripts/retrieval/package.json": "da2a5babe72ceccdea1d6cacdd27533ed5458bbb78ee8547183c5611a0175217",
+    "scripts/retrieval/pnpm-lock.yaml": "e8873126e14562f8c4154ddbee10ab58c57a54b7ed42dc80c5e3ed0e75393b8e",
+    "scripts/retrieval/pnpm-workspace.yaml": "0c83deef8e53447087ac261ed06ed657c6035ef68a451e915f18bbdccba99f6f",
+    "scripts/retrieval/rerank.mjs": "87be81b0805a4824806df3bd261830e00a0138ee52c734b9e6aba2d9e3a3d6b9"
+  }
+}

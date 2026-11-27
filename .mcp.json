@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "context7-local": {
+      "command": "/home/labuser/.cache/legacy-codebase-workflows/tools/context7-env/bin/python",
+      "args": [
+        "/home/labuser/jftp/tools/local_context7.py",
+        "mcp"
+      ]
+    }
+  }
+}
