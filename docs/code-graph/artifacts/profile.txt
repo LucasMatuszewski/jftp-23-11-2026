@@ -1,0 +1,590 @@
+
+## C0 n=81 pkgs={'gui': 69, '-': 12}
+ files: (12), DefaultLargeTheme.java(9), DefaultTheme.java(9), GreenMetalLargeTheme.java(9), HighContrastLargeTheme.java(9), HighContrastTheme.java(9)
+ hubs: javax.swing.plaf.FontUIResource, javax.swing.plaf.ColorUIResource, DefaultTheme, HighContrastTheme, SandstoneTheme, DefaultLargeTheme, GreenMetalLargeTheme, HighContrastLargeTheme
+ links: C75:1
+
+## C1 n=66 pkgs={'jftp/actions': 53, 'jftp': 12, '-': 1}
+ files: EmailRemoteFileAction.java(5), NewSessionAction.java(5), DownloadAndUnzipAction.java(4), JFTP.java(4), RemoteSystemPopupMenu.java(4), AbortAction.java(3)
+ hubs: JFTP, .prepareToolBar(), .preparePopupMenu(), RemoteSystemPopupMenu, DownloadAction, JFTPToolBar, ChangeRemoteDirectoryAction, DownloadAndUnzipAction
+ links: C17:56, C6:54, C13:40, C32:23
+
+## C2 n=63 pkgs={'jftp': 58, '-': 4, 'util': 1}
+ files: RemotePane.java(21), RemoteFileComparator.java(12), RemoteFileTableModel.java(10), TransferObject.java(7), FTPSession.java(4), (4)
+ hubs: com.myjavaworld.ftp.RemoteFile, RemotePane, RemoteFileTableModel, RemoteFileComparator, .fileChanged(), .sort(), TransferObject, .doubleClicked()
+ links: C7:15, C10:12, C20:8, C6:7
+
+## C3 n=58 pkgs={'jftp': 40, 'jftp/actions': 17, '-': 1}
+ files: FTPSession.java(12), PrintRemoteFileAction.java(4), DownloadAndUnzipDlg.java(4), ZipAndUploadDlg.java(4), JFTP.java(3), DownloadAsDlg.java(2)
+ hubs: .getCurrentSession(), .isConnected(), .getSelectedRemoteFile(), .getSelectedLocalFile(), .downloadAndUnzip(), .zipAndUpload(), .getFile(), .menuSelected()
+ links: C6:26, C7:23, C41:16, C1:13
+
+## C4 n=56 pkgs={'jftp': 38, '-': 16, 'util': 2}
+ files: (16), OSXAdapter.java(12), OSXAdapterOld.java(8), JFTPApplication.java(7), JFTPUtil.java(7), JFTP.java(4)
+ hubs: JFTPApplication, OSXAdapter, OSXAdapterOld, .getBundle(), .init(), JFTPUtil.java, OSXAdapter.java, .JFTPApplication()
+ links: C1:7, C28:4, C16:2, C83:2
+
+## C5 n=50 pkgs={'-': 28, 'gui': 12, 'jftp': 9}
+ files: (28), JFTPHelp2.java(4), DateCellRenderer.java(3), MComboBox.java(3), GUIUtil.java(3), MScrollPane.java(2)
+ hubs: CertificateManagerDlg.java, LocalPane.java, RemotePane.java, FavoritesDlg.java, MComboBox, MScrollPane, MScrollPane.java, JFTPHelp2
+ links: C9:53, C28:26, C26:25, C11:17
+
+## C6 n=49 pkgs={'jftp/actions': 18, '-': 15, 'jftp': 13}
+ files: (15), FTPSession.java(10), SwingWorker.java(2), NewLocalDirectoryAction.java(1), StatusBar.java(1), AbortAction.java(1)
+ hubs: java.awt.event.ActionEvent, FTPSession, FTPSession.java, RemoteSystemPopupMenu.java, RemoteSystemMenu.java, SwingWorker, ZipAndUploadAction.java, DownloadAndUnzipAction.java
+ links: C17:68, C1:54, C9:45, C3:26
+
+## C7 n=49 pkgs={'jftp': 44, 'jftp/actions': 5}
+ files: FTPSession.java(37), JFTP.java(2), ChangeRemoteDirectoryAction.java(1), DeleteRemoteFileAction.java(1), NewLocalFileAction.java(1), NewRemoteDirectoryAction.java(1)
+ hubs: .setBusy(), SwingWorker, .setRemoteWorkingDirectory(), .upRemoteWorkingDirectory(), .deleteLocalFiles(), .deleteRemoteFiles(), .actionPerformed(), .actionPerformed()
+ links: C10:38, C3:23, C6:20, C2:15
+
+## C8 n=47 pkgs={'jftp': 47}
+ files: JFTPPreferences.java(46), AdvancedConnectionPrefsPanel.java(1)
+ hubs: JFTPPreferences, .populateScreen(), .getBufferSize(), .getClient(), .getListParser(), .getTimeout(), .isPassive(), .getClientCertificateStore()
+ links: C68:13, C91:5, C83:4, C109:3
+
+## C9 n=44 pkgs={'jftp': 19, '-': 15, 'gui': 6}
+ files: (15), MLabel.java(4), GUIUtil.java(2), CommonResources.java(2), AboutDlg.java(1), AdvancedConnectionPrefsPanel.java(1)
+ hubs: MLabel, GUIUtil.java, GUIUtil, java.awt.Frame, insets, RemoteFileFilterDlg.java, gridbagconstraints, gridbaglayout
+ links: C28:95, C26:75, C5:53, C6:45
+
+## C10 n=43 pkgs={'jftp': 41, 'jftp/actions': 1, '-': 1}
+ files: FTPSession.java(36), StatusBar.java(3), DownloadAction.java(1), LocalFile.java(1), StatusWindow.java(1), (1)
+ hubs: Override, .upload(), .connectionException(), .ftpException(), .delete(), .download(), .changeRemoteFilePermissions(), .addError()
+ links: C7:38, C6:15, C2:12, C3:10
+
+## C11 n=41 pkgs={'jftp': 27, 'jftp/ssl': 8, 'gui': 3}
+ files: SecurityWarningDlg.java(6), MButton.java(2), AutoUpdater.java(2), ZipAndUploadDlg.java(2), JFTPHelp2.java(2), (2)
+ hubs: java.awt.Component, MButton, .getInstance(), .getString(), .enableHelp(), SecurityWarningDlg, .getOptionsPanel(), .SecurityWarningDlg()
+ links: C9:44, C22:18, C5:17, C51:16
+
+## C12 n=41 pkgs={'jftp': 23, 'gui': 16, '-': 2}
+ files: MTextField.java(16), RenameLocalFileDlg.java(8), CertificatePrefsPanel.java(7), RenameRemoteFileDlg.java(7), (2), RemoteFileFilterDlg.java(1)
+ hubs: MTextField, .setText(), RenameLocalFileDlg, RenameRemoteFileDlg, CertificatePrefsPanel, .initComponents(), .initComponents(), .RenameLocalFileDlg()
+ links: C9:19, C11:11, C31:8, C15:8
+
+## C13 n=40 pkgs={'jftp': 25, 'gui': 8, '-': 7}
+ files: (7), FTPMenu.java(6), MMenu.java(5), LocalSystemMenu.java(5), RemoteSystemMenu.java(5), ToolsMenu.java(5)
+ hubs: FTPMenu.java, MMenu, MMenuItem, .prepareMenuItems(), .prepareMenuItems(), .prepareMenuItems(), .add(), FTPMenu
+ links: C1:40, C32:16, C6:16, C17:13
+
+## C14 n=40 pkgs={'gui': 27, '-': 7, 'jftp': 6}
+ files: MDialog.java(14), ProgressDialog.java(13), (7), JFTP.java(5), FavoritesDlg.java(1)
+ hubs: MDialog, java.awt.event.WindowEvent, ProgressDialog, ProgressDialog.java, MDialog.java, java.awt.Dialog, .windowClosing(), EscapeAction
+ links: C9:32, C26:6, C1:6, C19:5
+
+## C15 n=39 pkgs={'jftp': 32, '-': 4, 'gui': 3}
+ files: ConnectionDlg.java(16), FavoritePropertiesDlg.java(16), (4), IntegerField.java(3)
+ hubs: ConnectionDlg, FavoritePropertiesDlg, IntegerField, java.awt.event.ComponentEvent, .setValue(), .getGeneralTab(), .getSSLTab(), .getGeneralTab()
+ links: C22:17, C11:15, C26:12, C12:8
+
+## C16 n=34 pkgs={'jftp': 26, 'gui': 4, '-': 4}
+ files: GeneralConnectionPrefsPanel.java(7), ProxyPrefsPanel.java(7), PreferencesDlg.java(6), (4), GUIUtil.java(3), AdvancedConnectionPrefsPanel.java(2)
+ hubs: .showError(), PreferencesDlg, .saveButtonPressed(), ProxyPrefsPanel, GeneralConnectionPrefsPanel, .getValue(), .showInformation(), .initComponents()
+ links: C11:13, C9:8, C3:7, C15:7
+
+## C17 n=32 pkgs={'jftp/actions': 24, '-': 4, 'jftp': 4}
+ files: EditLocalFileAction.java(4), PrintLocalFileAction.java(4), (4), ChangeLocalDirectoryAction.java(3), DeleteLocalFileAction.java(3), NewLocalDirectoryAction.java(2)
+ hubs: java.awt.event.ActionListener, JFTPToolBar.java, LocalSystemPopupMenu.java, LocalSystemMenu.java, LocalFile.java, OpenLocalFileAction.java, EditLocalFileAction.java, PrintLocalFileAction.java
+ links: C6:68, C1:56, C9:33, C32:14
+
+## C18 n=30 pkgs={'jftp': 29, '-': 1}
+ files: RemoteHost.java(20), ConnectionDlg.java(3), JFTP.java(3), FTPSession.java(2), FavoritePropertiesDlg.java(1), (1)
+ hubs: RemoteHost, .populateScreen(), .populateScreen(), .connect(), .getRemoteHost(), .updateSessionTitle(), .getHostName(), .getName()
+ links: C39:34, C15:7, C6:5, C3:4
+
+## C19 n=30 pkgs={'jftp': 29, '-': 1}
+ files: FavoritesDlg.java(27), FavoritePropertiesDlg.java(2), (1)
+ hubs: FavoritesDlg, FavoritesListModel, .addButtonPressed(), .editButtonPressed(), .connectButtonPressed(), .actionPerformed(), .saveFavorites(), .setFavorite()
+ links: C14:5, C20:5, C39:5, C16:4
+
+## C20 n=29 pkgs={'gui': 24, '-': 5}
+ files: MGlassPane.java(11), MTextField.java(5), (5), EditPopupMenu.java(2), MLabelTextField.java(2), MPasswordField.java(2)
+ hubs: java.awt.event.MouseEvent, MGlassPane, .show(), java.awt.event.KeyEvent, .getInstance(), MGlassPane.java, .mousePressed(), .mouseReleased()
+ links: C5:9, C40:8, C2:8, C50:6
+
+## C21 n=29 pkgs={'jftp/ssl': 25, '-': 2, 'gui': 1}
+ files: CertificateManagerDlg.java(22), CertificateTableModel.java(3), (2), GUIUtil.java(1), JFTP.java(1)
+ hubs: CertificateManagerDlg, .showConfirmation(), .deleteClientCertificates(), .deleteServerCertificates(), .importClientCertificates(), .importServerCertificates(), .setKeyStore(), DeleteCertificateAction
+ links: C56:9, C11:6, C89:5, C20:5
+
+## C22 n=29 pkgs={'jftp': 25, 'gui': 3, '-': 1}
+ files: LocalFileFilterDlg.java(15), AdvancedConnectionPrefsPanel.java(3), MCheckBox.java(2), FavoritePropertiesDlg.java(2), JFTP.java(2), MFrame.java(1)
+ hubs: MCheckBox, LocalFileFilterDlg, JPanel, AdvancedConnectionPrefsPanel, .getAdvancedTab(), .getAdvancedTab(), .initComponents(), .getSSLTab()
+ links: C11:18, C15:17, C29:7, C9:7
+
+## C23 n=29 pkgs={'jftp': 27, 'gui': 1, '-': 1}
+ files: LocalFile.java(17), LocalPane.java(10), MComboBox.java(1), (1)
+ hubs: LocalFile, DirectoryComboBoxModel, .LocalFile(), .setData(), .getParent(), .addItem(), .getRoots(), .updateComboWorkingDirectory()
+ links: C40:9, C72:9, C10:7, C17:6
+
+## C24 n=27 pkgs={'gui': 27}
+ files: MTextComponent.java(21), EditPopupMenu.java(6)
+ hubs: MTextComponent, EditPopupMenu, .setTextComponent(), .actionPerformed(), .EditPopupMenu(), .initComponents(), .getTextCompoent(), .canCopy()
+ links: C20:4, C32:2, C28:2, C31:2
+
+## C25 n=27 pkgs={'gui': 26, '-': 1}
+ files: MLabelTextField.java(22), MPasswordField.java(1), MPlainDocument.java(1), MTextArea.java(1), MTextField.java(1), (1)
+ hubs: MLabelTextField, .setCharacterCase(), .createDefaultModel(), .setDocument(), .setup(), Override, .MLabelTextField(), .mouseClicked()
+ links: C31:6, C20:5, C45:4, C42:2
+
+## C27 n=26 pkgs={'gui': 24, '-': 2}
+ files: MTextArea.java(20), (2), MLabelTextField.java(1), MPasswordField.java(1), MPlainDocument.java(1), MTextField.java(1)
+ hubs: MTextArea, .getMaximumLength(), .createDefaultModel(), .setup(), .getMaximumLength(), .getMaximumLength(), .getMaximumLength(), .mouseClicked()
+ links: C31:5, C20:5, C15:4, C81:2
+
+## C26 n=26 pkgs={'-': 16, 'jftp': 9, 'util': 1}
+ files: (16), CertificatePrefsPanel.java(1), ConnectionDlg.java(1), DownloadAndUnzipDlg.java(1), FavoritePropertiesDlg.java(1), JFTP.java(1)
+ hubs: ConnectionDlg.java, FavoritePropertiesDlg.java, JFTP.java, javax.swing.JPanel, DownloadAndUnzipDlg.java, TransferModesPrefsPanel.java, file, SecurityPrefsPanel.java
+ links: C9:75, C28:32, C5:25, C6:20
+
+## C28 n=25 pkgs={'jftp': 13, '-': 7, 'util': 2}
+ files: (7), LocalePrefsPanel.java(6), ResourceLoader.java(2), EditPopupMenu.java(1), AutoUpdater.java(1), HelpMenu.java(1)
+ hubs: java.util.ResourceBundle, ResourceLoader.java, ResourceLoader, LocalePrefsPanel.java, CertificatePane.java, LocalePrefsPanel, SoftwareUpdatePrefsPanel.java, HelpMenu.java
+ links: C9:95, C26:32, C5:26, C6:15
+
+## C29 n=25 pkgs={'jftp': 21, 'gui': 2, '-': 2}
+ files: DownloadAndUnzipDlg.java(12), SecurityPrefsPanel.java(6), MRadioButton.java(2), (2), ConnectionDlg.java(1), FavoritePropertiesDlg.java(1)
+ hubs: MRadioButton, DownloadAndUnzipDlg, SecurityPrefsPanel, java.awt.event.ItemEvent, .getDownloadOptions(), .getUnzipOptions(), .actionPerformed(), .DownloadAndUnzipDlg()
+ links: C26:13, C11:11, C22:7, C15:5
+
+## C30 n=25 pkgs={'zip': 19, 'jftp/actions': 3, '-': 2}
+ files: Unzip.java(14), DownloadAndUnzipAction.java(3), ZipListener.java(3), Zip.java(2), (2), ProgressListener.java(1)
+ hubs: Unzip, ZipListener, .construct(), .unzipFile(), .progressChanged(), .beginFile(), .endFile(), SwingWorker
+ links: C37:6, C48:5, C76:5, C6:3
+
+## C32 n=24 pkgs={'jftp/actions': 11, 'jftp': 8, '-': 3}
+ files: LocalSystemPopupMenu.java(6), ZipAndUploadAction.java(4), UploadAsAction.java(3), (3), MPopupMenu.java(2), NewLocalDirectoryAction.java(2)
+ hubs: .preparePopupMenu(), LocalSystemPopupMenu, MPopupMenu, ZipAndUploadAction, .add(), UploadAsAction, javax.swing.event.PopupMenuEvent, .getInstance()
+ links: C1:23, C13:16, C17:14, C3:6
+
+## C33 n=24 pkgs={'gui': 23, '-': 1}
+ files: MPasswordField.java(19), MLabelTextField.java(1), MPlainDocument.java(1), MTextArea.java(1), MTextField.java(1), (1)
+ hubs: MPasswordField, .setMaximumLength(), .setMaximumLength(), .mouseClicked(), .mouseEntered(), .mouseExited(), .MPasswordField(), .setMaximumLength()
+ links: C31:5, C20:5, C15:4, C16:2
+
+## C31 n=24 pkgs={'-': 13, 'gui': 11}
+ files: (13), MTextField.java(4), MPasswordField.java(3), MTextComponent.java(1), IntegerField.java(1), MLabelTextField.java(1)
+ hubs: java.awt.event.MouseListener, javax.swing.text.Document, MLabelTextField.java, MTextField.java, MPasswordField.java, MTextArea.java, toolkit, java.awt.datatransfer.Transferable
+ links: C34:10, C12:8, C25:6, C20:6
+
+## C34 n=23 pkgs={'jftp': 18, '-': 5}
+ files: DnDTransferHandler.java(18), (5)
+ hubs: java.awt.datatransfer.DataFlavor, DnDTransferHandler, DnDTransferHandler.java, javax.swing.JComponent, .createTransferable(), LocalFileTransferable, RemoteFileTransferable, .importData()
+ links: C31:10, C1:4, C2:4, C5:4
+
+## C35 n=23 pkgs={'jftp': 22, '-': 1}
+ files: TransferModesPrefsPanel.java(21), JFTPPreferences.java(1), (1)
+ hubs: TransferModesPrefsPanel, TypesTableModel, .populateScreen(), .configureTable(), .initComponents(), Override, TransferTypeCellRenderer, .getTableCellRendererComponent()
+ links: C55:3, C5:3, C16:3, C97:2
+
+## C36 n=22 pkgs={'jftp': 21, '-': 1}
+ files: FTPSession.java(17), JFTP.java(1), LocalPane.java(1), StatusBar.java(1), StatusWindow.java(1), (1)
+ hubs: .setLocalWorkingDirectory(), .FTPSession(), .connectionClosed(), .updateTitle(), .updateToolBar(), .addStatus(), .finished(), .connectionOpened()
+ links: C6:12, C10:9, C7:7, C54:3
+
+## C37 n=22 pkgs={'zip': 15, 'jftp/actions': 3, '-': 3}
+ files: Zip.java(15), ZipAndUploadAction.java(3), (3), LocalFile.java(1)
+ hubs: com.myjavaworld.util.Filter, Zip, .construct(), .list(), .addEntry(), .addFile(), SwingWorker, .fireBeginFileEvent()
+ links: C30:6, C3:4, C48:4, C23:3
+
+## C38 n=22 pkgs={'gui': 9, 'jftp': 8, '-': 5}
+ files: MDefaultRenderer.java(5), (5), DriveCellRenderer.java(4), LocaleCellRenderer.java(4), MList.java(3), MTableCellRenderer.java(1)
+ hubs: javax.swing.JLabel, javax.swing.JList, javax.swing.ListCellRenderer, MDefaultRenderer.java, MDefaultRenderer, javax.swing.table.TableCellRenderer, MList, MTableCellRenderer.java
+ links: C58:10, C11:8, C55:6, C49:5
+
+## C40 n=22 pkgs={'jftp': 22}
+ files: LocalPane.java(16), FTPSession.java(4), LocalFileTableModel.java(2)
+ hubs: LocalPane, .getJFTP(), .doubleClicked(), .getFileAt(), .getSelectedFiles(), .mouseReleased(), .scrollerRightClicked(), .tableRightClicked()
+ links: C23:9, C20:8, C5:6, C71:5
+
+## C41 n=22 pkgs={'jftp': 22}
+ files: JFTP.java(10), FTPSession.java(9), RemotePane.java(2), LocalPane.java(1)
+ hubs: .actionPerformed(), .showLocalFileFilter(), .showRemoteFileFilter(), .refresh(), .setLocalFileFilter(), .setRemoteFileFilter(), .invertRemoteFileSelection(), .selectAllRemoteFiles()
+ links: C3:16, C1:11, C6:10, C2:4
+
+## C39 n=22 pkgs={'jftp': 21, 'jftp/actions': 1}
+ files: RemoteHost.java(16), JFTP.java(3), ConnectAction.java(1), ConnectionDlg.java(1), FavoritePropertiesDlg.java(1)
+ hubs: .addToFavorites(), .okButtonPressed(), .connectButtonPressed(), .RemoteHost(), .actionPerformed(), .setCommands(), .setFTPClientClassName(), .setListParserClassName()
+ links: C18:34, C16:5, C19:5, C15:4
+
+## C42 n=21 pkgs={'jftp': 19, '-': 2}
+ files: RemoteFilePropertiesDlg.java(19), (2)
+ hubs: RemoteFilePropertiesDlg, .RemoteFilePropertiesDlg(), .computeSizeAndContents(), .initComponents(), com.myjavaworld.ftp.FTPClient, .close(), Override, .actionPerformed()
+ links: C11:4, C2:4, C22:3, C6:3
+
+## C43 n=21 pkgs={'gui': 16, '-': 5}
+ files: MPlainDocument.java(5), (5), SingleLineDocument.java(4), IntegerField.java(3), MLabelTextField.java(1), MPasswordField.java(1)
+ hubs: MPlainDocument, javax.swing.text.AttributeSet, SingleLineDocument, .getCharacterCase(), .insertString(), MPlainDocument.java, IntegerDocument, .createDefaultModel()
+ links: C31:5, C15:2, C25:2, C33:2
+
+## C44 n=21 pkgs={'util': 9, 'jftp': 7, 'gui': 4}
+ files: SystemUtil.java(9), AboutDlg.java(6), MButton.java(1), MCheckBox.java(1), MLabel.java(1), MRadioButton.java(1)
+ hubs: SystemUtil, .isMac(), AboutDlg, .initComponents(), .actionPerformed(), .AboutDlg(), .JFTPPreferences(), .getOSName()
+ links: C9:8, C13:7, C11:4, C26:3
+
+## C45 n=21 pkgs={'jftp': 19, 'gui': 1, '-': 1}
+ files: LocalFilePropertiesDlg.java(16), LocalFile.java(3), MLabelTextField.java(1), (1)
+ hubs: LocalFilePropertiesDlg, .computeSizeAndContents(), .LocalFilePropertiesDlg(), .initComponents(), .setText(), .populateScreen(), .getSize(), .windowOpened()
+ links: C72:8, C23:6, C25:4, C11:4
+
+## C46 n=20 pkgs={'-': 11, 'jftp': 9}
+ files: (11), FavoritesManager.java(8), RemoteHost.java(1)
+ hubs: FavoritesManager.java, FavoritesManager, .getFavorites(), .saveFavorites(), RemoteHost.java, .addFavorite(), .getCipher(), serializable
+ links: C26:6, C19:2, C39:2, C48:2
+
+## C47 n=20 pkgs={'util': 17, 'jftp': 3}
+ files: FileChangeMonitor.java(9), FileChangeEvent.java(5), FileChangeListener.java(3), FTPSession.java(2), JFTP.java(1)
+ hubs: FileChangeMonitor, FileChangeEvent, FileChangeListener, .closeSession(), .fireFileChanged(), .closeSession(), .fileChanged(), .actionPerformed()
+ links: C6:10, C10:2, C36:2, C66:2
+
+## C48 n=19 pkgs={'-': 8, 'util': 7, 'zip': 2}
+ files: (8), ProgressEvent.java(4), FileUtilities.java(3), FTPSession.java(1), KeyStoreManager.java(1), Unzip.java(1)
+ hubs: Zip.java, Unzip.java, KeyStoreManager.java, ProgressEvent, FileUtilities.java, javax.swing.event.EventListenerList, fileinputstream, fileoutputstream
+ links: C26:9, C6:6, C30:5, C37:4
+
+## C49 n=19 pkgs={'gui': 15, '-': 4}
+ files: MTableHeaderRenderer.java(5), (4), MCheckBox.java(2), MMenuItem.java(2), MRadioButton.java(2), MButton.java(1)
+ hubs: javax.swing.Icon, javax.swing.Action, MTableHeaderRenderer, MMenuItem.java, .setIcon(), MCheckBox.java, MRadioButton.java, .getTableCellRendererComponent()
+ links: C55:6, C5:6, C58:5, C38:5
+
+## C50 n=19 pkgs={'jftp': 8, 'gui': 7, '-': 3}
+ files: MInternalFrame.java(7), SessionPanel.java(7), (3), FTPSession.java(1), SecurityWarningDlg.java(1)
+ hubs: SessionPanel, MInternalFrame, MGlassPane, .dispose(), MInternalFrame.java, SessionPanel.java, .mousePressed(), .toString()
+ links: C20:6, C6:3, C10:1, C7:1
+
+## C51 n=19 pkgs={'jftp': 11, 'jftp/ssl': 7, '-': 1}
+ files: DownloadAsDlg.java(6), CertificateDlg.java(4), CertificateManagerDlg.java(3), FavoritesDlg.java(2), JFTPHelp2.java(1), RemoteFileFilterDlg.java(1)
+ hubs: .enableHelpKey(), DownloadAsDlg, .setTitle(), CertificateDlg, .FavoritesDlg(), .CertificateDlg(), .CertificateManagerDlg(), .getServerCertificatesTab()
+ links: C11:16, C9:5, C12:4, C19:4
+
+## C52 n=18 pkgs={'jftp/ssl': 17, '-': 1}
+ files: CertificatePane.java(12), DNParser.java(4), CertificateTableModel.java(1), (1)
+ hubs: java.security.cert.Certificate, CertificatePane, .initComponents(), .populateScreen(), .getParameter(), .getGeneralPanel(), .getIssuerPanel(), .getSubjectPanel()
+ links: C9:6, C11:6, C28:4, C56:3
+
+## C53 n=17 pkgs={'jftp/ssl': 10, '-': 7}
+ files: JFTPTrustManager.java(9), (7), JFTPKeyManager.java(1)
+ hubs: JFTPTrustManager, JFTPTrustManager.java, java.security.cert.X509Certificate, .checkServerTrusted(), keystoreexception, .isTrusted(), .isValidHost(), .isValidDate()
+ links: C1:3, C65:3, C56:2, C77:2
+
+## C54 n=17 pkgs={'jftp': 12, '-': 5}
+ files: StatusWindow.java(9), (5), FTPSession.java(3)
+ hubs: StatusWindow, StatusWindow.java, .append(), com.myjavaworld.ftp.ControlConnectionEvent, .commandSent(), .connectionDropped(), .replyReceived(), .addCommand()
+ links: C6:5, C28:4, C36:3, C31:3
+
+## C55 n=17 pkgs={'jftp': 8, 'gui': 5, '-': 4}
+ files: RemoteFileCellRenderer.java(4), (4), MTableCellRenderer.java(3), LocalFileCellRenderer.java(3), DateCellRenderer.java(1), NumericCellRenderer.java(1)
+ hubs: javax.swing.JTable, MTableCellRenderer, .getIcon(), RemoteFileCellRenderer.java, LocalFileCellRenderer, RemoteFileCellRenderer, LocalFileCellRenderer.java, .getTableCellRendererComponent()
+ links: C5:10, C49:6, C38:6, C11:6
+
+## C56 n=16 pkgs={'jftp/ssl': 15, '-': 1}
+ files: KeyStoreManager.java(15), (1)
+ hubs: KeyStoreManager, java.security.KeyStore, .init(), .getServerCertificateStore(), .addServerCertificate(), .getClientCertificateStore(), .getKeyStore(), .addCertificate()
+ links: C21:9, C89:3, C52:3, C51:2
+
+## C57 n=16 pkgs={'gui': 16}
+ files: SwingWorker.java(16)
+ hubs: ThreadVar, .SwingWorker(), .get(), .get(), .interrupt(), .run(), Runnable, Runnable
+ links: C6:9
+
+## C58 n=15 pkgs={'gui': 10, '-': 5}
+ files: ImageCellRenderer.java(6), (5), MTree.java(3), MTableHeaderRenderer.java(1)
+ hubs: ImageCellRenderer.java, ImageCellRenderer, MTableHeaderRenderer.java, MTree, java.awt.Color, MTree.java, javax.swing.JTree, .getListCellRendererComponent()
+ links: C38:10, C49:5, C11:5, C5:5
+
+## C59 n=14 pkgs={'gui': 5, '-': 5, 'jftp': 4}
+ files: SplashWindow.java(5), (5), JFTPApplet.java(4)
+ hubs: JFTPApplet.java, JFTPApplet, SplashWindow.java, borderlayout, SplashWindow, .initComponents(), .initComponents(), .setVisible()
+ links: C49:4, C11:3, C64:3, C5:2
+
+## C60 n=14 pkgs={'jftp': 12, '-': 2}
+ files: LocalFileFilter.java(11), (2), LocalFileFilterDlg.java(1)
+ hubs: LocalFileFilter, com.myjavaworld.util.DateFilter, com.myjavaworld.util.RegexFilter, .setFilter(), .LocalFileFilter(), LocalFileFilter.java, .getDateFilter(), .getRegexFilter()
+ links: C9:4, C37:3, C22:3, C63:2
+
+## C61 n=14 pkgs={'gui': 10, 'jftp': 3, '-': 1}
+ files: IndentIcon.java(10), LocalPane.java(3), (1)
+ hubs: IndentIcon, .getListCellRendererComponent(), DirectoryCellRenderer, IndentIcon.java, .paintIcon(), .setIcon(), .DirectoryCellRenderer(), .getIcon()
+ links: C49:4, C11:3, C38:2, C72:2
+
+## C62 n=14 pkgs={'gui': 6, '-': 5, 'jftp': 3}
+ files: MFrame.java(5), (5), JFTPToolBar.java(3), MButton.java(1)
+ hubs: MFrame, .add(), java.awt.Insets, javax.swing.JButton, MButton.java, MFrame.java, .createActionComponent(), .getInsets()
+ links: C1:5, C49:3, C26:3, C22:2
+
+## C63 n=14 pkgs={'jftp': 12, '-': 2}
+ files: RemoteFileFilterDlg.java(12), (2)
+ hubs: RemoteFileFilterDlg, .initComponents(), .getDateFilterPanel(), .getFilterTypePanel(), .getFilter(), .validateInput(), .getDateFilter(), .getRegexFilter()
+ links: C22:6, C11:5, C12:3, C9:3
+
+## C64 n=13 pkgs={'-': 7, 'gui': 3, 'jftp': 3}
+ files: (7), NumericCellRenderer.java(3), LocalFilePropertiesDlg.java(1), RemoteFilePropertiesDlg.java(1), StatusBar.java(1)
+ hubs: LocalFilePropertiesDlg.java, RemoteFilePropertiesDlg.java, borderfactory, StatusBar.java, java.text.MessageFormat, NumericCellRenderer, NumericCellRenderer.java, swingconstants
+ links: C9:28, C28:12, C6:8, C5:8
+
+## C65 n=13 pkgs={'jftp/ssl': 8, '-': 5}
+ files: JFTPKeyManager.java(8), (5)
+ hubs: JFTPKeyManager.java, JFTPKeyManager, java.security.Principal, .chooseClientAlias(), .chooseServerAlias(), java.net.Socket, .getPrivateKey(), .getClientAliases()
+ links: C53:3, C77:2, C56:1, C28:1
+
+## C66 n=13 pkgs={'util': 5, 'zip': 5, 'jftp': 2}
+ files: ZipEvent.java(5), StatusEvent.java(4), FTPSession.java(2), StatusListener.java(1), (1)
+ hubs: ZipEvent, java.util.EventObject, StatusEvent, .beginFile(), .endFile(), .statusChanged(), .getFile(), .getType()
+ links: C6:3, C47:2, C48:2, C30:2
+
+## C67 n=13 pkgs={'jftp': 7, 'gui': 4, '-': 2}
+ files: TransferModeMenu.java(6), MRadioButtonMenuItem.java(4), (2), FTPSession.java(1)
+ hubs: TransferModeMenu, MRadioButtonMenuItem, .prepareMenuItems(), MRadioButtonMenuItem.java, .menuSelected(), .TransferModeMenu(), .setMnemonic(), MenuEvent
+ links: C13:4, C49:3, C28:3, C44:2
+
+## C68 n=13 pkgs={'jftp': 13}
+ files: JFTPPreferences.java(9), GeneralConnectionPrefsPanel.java(1), PreferencesDlg.java(1), ProxyPrefsPanel.java(1), SecurityPrefsPanel.java(1)
+ hubs: .populateScreen(), .actionPerformed(), .populateScreen(), .populateScreen(), .getEmail(), .getLocalDirectory(), .getProxyHost(), .getProxyPassword()
+ links: C8:13, C16:7, C29:2, C12:2
+
+## C69 n=12 pkgs={'gui': 9, '-': 3}
+ files: LicenseAgreementDlg.java(9), (3)
+ hubs: LicenseAgreementDlg.java, LicenseAgreementDlg, java.net.URL, .getCommandButtons(), .initComponents(), .LicenseAgreementDlg(), .setURL(), .getURL()
+ links: C9:8, C28:5, C11:3, C26:3
+
+## C70 n=12 pkgs={'jftp/actions': 10, '-': 1, 'jftp': 1}
+ files: ManageCertificatesAction.java(5), ManageFavoritesAction.java(5), (1), ToolsMenu.java(1)
+ hubs: ToolsMenu.java, ManageCertificatesAction, ManageFavoritesAction, javax.swing.AbstractAction, ManageCertificatesAction.java, ManageFavoritesAction.java, .getInstance(), .getInstance()
+ links: C1:10, C13:6, C6:4, C17:4
+
+## C71 n=12 pkgs={'jftp/actions': 7, 'jftp': 4, 'gui': 1}
+ files: DeleteRemoteFileAction.java(3), DeleteLocalFileAction.java(2), OpenLocalFileAction.java(2), LocalPane.java(2), RemotePane.java(2), GUIUtil.java(1)
+ hubs: DeleteRemoteFileAction, .getInstance(), .getInstance(), .getInstance(), .getDeleteKey(), .configureTable(), .configureTable(), .LocalPane()
+ links: C1:12, C17:6, C40:5, C13:5
+
+## C72 n=12 pkgs={'jftp': 11, '-': 1}
+ files: LocalFile.java(5), LocalFileComparator.java(5), LocalFileCellRenderer.java(1), (1)
+ hubs: .isDirectory(), .getDisplayName(), .compareBySize(), .compareByType(), .getTableCellRendererComponent(), .compareByName(), .getIcon(), .compare()
+ links: C23:9, C45:8, C85:5, C55:2
+
+## C73 n=10 pkgs={'jftp': 10}
+ files: UIPrefsPanel.java(9), JFTPPreferences.java(1)
+ hubs: UIPrefsPanel, .populateScreen(), .initComponents(), .saveChanges(), .getLookAndFeelClassName(), .getInstalledLookAndFeels(), .getLookAndFeelClassName(), .getLookAndFeelName()
+ links: C16:3, C5:2, C28:2, C8:2
+
+## C74 n=10 pkgs={'jftp': 9, '-': 1}
+ files: LocalFileTableModel.java(8), LocalPane.java(1), (1)
+ hubs: LocalFileTableModel, .setData(), .getData(), .LocalFileTableModel(), .getData(), .getColumnClass(), .getColumnName(), Override
+ links: C23:6, C40:4, C28:3, C85:2
+
+## C75 n=9 pkgs={'gui': 6, '-': 3}
+ files: MTable.java(6), (3)
+ hubs: MTable, MTable.java, .processMouseEvent(), .processPopupTrigger(), .getRowHeight(), .MTable(), javax.swing.table.TableModel, Override
+ links: C5:4, C20:3, C35:2, C55:2
+
+## C76 n=9 pkgs={'util': 4, 'zip': 4, '-': 1}
+ files: ProgressListener.java(2), StatusListener.java(2), Zip.java(2), Unzip.java(1), (1), ZipListener.java(1)
+ hubs: ProgressListener, java.util.EventListener, StatusListener, .addProgressListener(), .removeProgressListener(), .removeProgressListener(), ProgressListener.java, StatusListener.java
+ links: C30:5, C37:3, C6:2, C47:2
+
+## C77 n=9 pkgs={'-': 6, 'jftp/ssl': 3}
+ files: (6), JFTPSSLContext.java(3)
+ hubs: JFTPSSLContext.java, .getSSLContext(), nosuchalgorithmexception, JFTPSSLContext, javax.net.ssl.SSLContext, unrecoverablekeyexception, keymanagementexception, keymanager
+ links: C6:2, C65:2, C53:2, C1:2
+
+## C78 n=9 pkgs={'gui': 7, '-': 2}
+ files: MDesktopPane.java(7), (2)
+ hubs: MDesktopPane, MDesktopPane.java, .tile(), .tileHorizontally(), .tileVertically(), javax.swing.JDesktopPane, .cascade(), .MDesktopPane()
+ links: C5:2, C9:1, C50:1
+
+## C79 n=9 pkgs={'jftp': 8, '-': 1}
+ files: ChangeLocalDirectoryDlg.java(8), (1)
+ hubs: ChangeLocalDirectoryDlg, .ChangeLocalDirectoryDlg(), .actionPerformed(), .initComponents(), .validateInput(), .close(), .escape(), .getDirectory()
+ links: C11:4, C17:3, C9:2, C12:1
+
+## C80 n=9 pkgs={'jftp': 8, '-': 1}
+ files: ChangeRemoteDirectoryDlg.java(8), (1)
+ hubs: ChangeRemoteDirectoryDlg, .ChangeRemoteDirectoryDlg(), .actionPerformed(), .initComponents(), .validateInput(), .close(), .escape(), .getDirectory()
+ links: C11:4, C6:2, C9:2, C12:1
+
+## C81 n=9 pkgs={'jftp': 8, '-': 1}
+ files: ExecuteCommandDlg.java(8), (1)
+ hubs: ExecuteCommandDlg, .ExecuteCommandDlg(), .actionPerformed(), .initComponents(), .validateInput(), .close(), .escape(), .getCommands()
+ links: C11:4, C27:2, C9:2, C16:1
+
+## C82 n=9 pkgs={'jftp': 8, '-': 1}
+ files: NewLocalDirectoryDlg.java(8), (1)
+ hubs: NewLocalDirectoryDlg, .NewLocalDirectoryDlg(), .actionPerformed(), .initComponents(), .validateInput(), .close(), .escape(), .getDirectory()
+ links: C11:4, C12:2, C6:2, C9:2
+
+## C84 n=8 pkgs={'gui': 5, '-': 2, 'jftp': 1}
+ files: IDTreeNode.java(5), (2), PreferencesDlg.java(1)
+ hubs: IDTreeNode, .valueChanged(), IDTreeNode.java, .getID(), javax.swing.event.TreeSelectionEvent, javax.swing.tree.DefaultMutableTreeNode, .IDTreeNode(), .setID()
+ links: C9:3, C16:1
+
+## C85 n=8 pkgs={'jftp': 8}
+ files: LocalFileComparator.java(6), LocalPane.java(2)
+ hubs: LocalFileComparator, .sort(), .updateTableHeader(), .getCompareBy(), .getOrder(), .LocalFileComparator(), .setCompareBy(), .setOrder()
+ links: C72:5, C40:4, C74:2, C71:1
+
+## C86 n=8 pkgs={'jftp': 7, '-': 1}
+ files: NewLocalFileDlg.java(7), (1)
+ hubs: NewLocalFileDlg, .NewLocalFileDlg(), .actionPerformed(), .initComponents(), .validateInput(), .close(), .escape(), Override
+ links: C11:4, C12:2, C9:2, C17:2
+
+## C87 n=8 pkgs={'jftp': 7, '-': 1}
+ files: NewRemoteDirectoryDlg.java(7), (1)
+ hubs: NewRemoteDirectoryDlg, .NewRemoteDirectoryDlg(), .actionPerformed(), .initComponents(), .validateInput(), .close(), .escape(), Override
+ links: C11:4, C12:2, C6:2, C9:2
+
+## C88 n=8 pkgs={'jftp': 7, '-': 1}
+ files: NewRemoteFileDlg.java(7), (1)
+ hubs: NewRemoteFileDlg, .NewRemoteFileDlg(), .actionPerformed(), .initComponents(), .validateInput(), .close(), .escape(), Override
+ links: C11:4, C12:2, C6:2, C9:2
+
+## C89 n=8 pkgs={'jftp/ssl': 7, '-': 1}
+ files: CertificateTableModel.java(7), (1)
+ hubs: CertificateTableModel, .CertificateTableModel(), .getKeyStore(), .getColumnClass(), .getColumnName(), Override, .getColumnCount(), .getRowCount()
+ links: C21:5, C28:3, C56:3, C52:1
+
+## C90 n=8 pkgs={'jftp': 7, '-': 1}
+ files: ZipAndUploadDlg.java(7), (1)
+ hubs: ZipAndUploadDlg, .initComponents(), .actionPerformed(), .browse(), .ZipAndUploadDlg(), .validateInput(), .escape(), Override
+ links: C11:6, C3:4, C12:3, C29:2
+
+## C83 n=8 pkgs={'jftp': 7, '-': 1}
+ files: JFTP.java(4), JFTPPreferences.java(3), (1)
+ hubs: .exit(), java.awt.Rectangle, .getPreferredBounds(), .getWindowBounds(), .windowOpened(), .windowClosing(), .getCheckForUpdates(), .setWindowBounds()
+ links: C8:4, C1:4, C4:2, C26:2
+
+## C92 n=7 pkgs={'jftp': 6, '-': 1}
+ files: Favorite.java(6), (1)
+ hubs: Favorite, .compareTo(), .equals(), Override, .Favorite(), .hashcode(), Favorite.java
+ links: C19:2, C15:1, C18:1
+
+## C93 n=7 pkgs={'jftp': 7}
+ files: StatusBar.java(6), FTPSession.java(1)
+ hubs: StatusBar, .actionPerformed(), .initComponents(), .setSpeed(), .setTimeElapsed(), .StatusBar(), .setMinimum()
+ links: C6:5, C10:3, C9:2, C64:2
+
+## C94 n=7 pkgs={'jftp': 7}
+ files: SoftwareUpdatePrefsPanel.java(7)
+ hubs: SoftwareUpdatePrefsPanel, .populateScreen(), .initComponents(), .actionPerformed(), .saveChanges(), .SoftwareUpdatePrefsPanel(), .validateFields()
+ links: C22:2, C11:2, C16:2, C28:2
+
+## C95 n=7 pkgs={'jftp': 6, '-': 1}
+ files: UploadAsDlg.java(6), (1)
+ hubs: UploadAsDlg, .initComponents(), .UploadAsDlg(), .actionPerformed(), .validateInput(), .escape(), Override
+ links: C11:3, C12:2, C23:2, C6:2
+
+## C91 n=7 pkgs={'jftp': 6, 'gui': 1}
+ files: JFTP.java(3), JFTPPreferences.java(3), LicenseAgreementDlg.java(1)
+ hubs: .savePreferences(), .showLicenseAgreement(), .loadPreferences(), .getTransferTypes(), .isLicenseAgreed(), .getLicenseAgreedForVersion(), .setLicenseAgreedForVersion()
+ links: C8:5, C1:3, C69:2, C83:1
+
+## C96 n=6 pkgs={'gui': 4, '-': 2}
+ files: MOptionPane.java(4), (2)
+ hubs: javax.swing.JOptionPane, MOptionPane, .getMaxCharactersPerLineCount(), MOptionPane.java, .MOptionPane(), Override
+ links: C5:2, C9:1, C6:1
+
+## C97 n=6 pkgs={'jftp': 3, '-': 2, 'gui': 1}
+ files: RemotePane.java(2), (2), TransferModesPrefsPanel.java(1), MPopupMenu.java(1)
+ hubs: .getPreferredSize(), .show(), .getScrollableTracksViewportWidth(), MTable, Override, Override
+ links: C32:2, C35:2, C5:2, C20:1
+
+## C98 n=6 pkgs={'jftp': 6}
+ files: LocalFile.java(4), LocalFilePropertiesDlg.java(1), LocalFileFilter.java(1)
+ hubs: .getAttributesPanel(), .accept(), .getLastModified(), .canRead(), .isHidden(), .canWrite()
+ links: C23:4, C45:3, C11:1, C60:1
+
+## C100 n=5 pkgs={'jftp/actions': 4, 'jftp': 1}
+ files: DisconnectAction.java(4), FTPSession.java(1)
+ hubs: DisconnectAction, .getInstance(), .disconnect(), .actionPerformed(), .DisconnectAction()
+ links: C1:4, C6:3, C13:2, C7:2
+
+## C101 n=5 pkgs={'jftp/actions': 5}
+ files: EmailLocalFileAction.java(5)
+ hubs: EmailLocalFileAction, EmailLocalFileAction.java, .getInstance(), .EmailLocalFileAction(), .actionPerformed()
+ links: C1:4, C6:2, C17:2
+
+## C102 n=5 pkgs={'jftp/actions': 4, 'jftp': 1}
+ files: ReconnectAction.java(4), FTPSession.java(1)
+ hubs: ReconnectAction, .getInstance(), .actionPerformed(), .ReconnectAction(), .reconnect()
+ links: C1:4, C6:3, C13:2, C17:2
+
+## C99 n=5 pkgs={'util': 4, '-': 1}
+ files: RandomKeyGenerator.java(4), (1)
+ hubs: RandomKeyGenerator, java.security.SecureRandom, RandomKeyGenerator.java, .formatKey(), .generate()
+ links: 
+
+## C103 n=4 pkgs={'jftp/actions': 3, '-': 1}
+ files: AbortAction.java(3), (1)
+ hubs: SwingWorker, .construct(), .finished(), Override
+ links: C3:1
+
+## C104 n=4 pkgs={'jftp/actions': 3, '-': 1}
+ files: DownloadAsAction.java(3), (1)
+ hubs: SwingWorker, .construct(), .finished(), Override
+ links: C3:1
+
+## C105 n=4 pkgs={'jftp/actions': 3, '-': 1}
+ files: EditRemoteFileAction.java(3), (1)
+ hubs: SwingWorker, .finished(), .construct(), Override
+ links: C16:1, C3:1
+
+## C106 n=4 pkgs={'jftp/actions': 3, '-': 1}
+ files: OpenRemoteFileAction.java(3), (1)
+ hubs: SwingWorker, .finished(), .construct(), Override
+ links: C16:1, C3:1
+
+## C107 n=4 pkgs={'jftp/actions': 3, '-': 1}
+ files: UploadAsAction.java(3), (1)
+ hubs: SwingWorker, .construct(), .finished(), Override
+ links: C3:1
+
+## C108 n=4 pkgs={'util': 3, '-': 1}
+ files: StringUtilities.java(3), (1)
+ hubs: .getFormattedMessage(), stringtokenizer, StringUtilities, StringUtilities.java
+ links: C9:1, C46:1
+
+## C110 n=3 pkgs={'jftp': 2, '-': 1}
+ files: LocalPane.java(2), (1)
+ hubs: .getScrollableTracksViewportWidth(), MTable, Override
+ links: C5:1, C23:1, C97:1
+
+## C111 n=3 pkgs={'util': 3}
+ files: Encoder.java(3)
+ hubs: Encoder, .hexEncode(), Encoder.java
+ links: 
+
+## C109 n=3 pkgs={'jftp': 3}
+ files: JFTPPreferences.java(2), LocalePrefsPanel.java(1)
+ hubs: .populateScreen(), .getDateFormat(), .getTimeFormat()
+ links: C28:3, C8:3, C68:1
+
+## C112 n=2 pkgs={'jftp': 2}
+ files: JFTPConstants.java(2)
+ hubs: JFTPConstants, JFTPConstants.java
+ links: 
+
+## C113 n=2 pkgs={'src/main/scripts': 2}
+ files: jftp.sh(2)
+ hubs: jftp.sh, jftp.sh script
+ links: 
+
+## C114 n=1 pkgs={'-': 1}
+ files: pom.xml(1)
+ hubs: com.myjavaworld:jftp
+ links: 
+
+## C115 n=1 pkgs={'gui': 1}
+ files: package-info.java(1)
+ hubs: gui/package-info.java
+ links: 
+
+## C116 n=1 pkgs={'jftp': 1}
+ files: package-info.java(1)
+ hubs: jftp/package-info.java
+ links: 
+
+## C117 n=1 pkgs={'util': 1}
+ files: package-info.java(1)
+ hubs: util/package-info.java
+ links: 

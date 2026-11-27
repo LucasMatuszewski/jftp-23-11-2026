@@ -1,0 +1,62 @@
+
+📦 Repomix v1.18.1
+
+[K[?25l⠋ Initializing...
+[K[1A[K[?25l⠙ Searching for files...
+[K[1A[K[?25l⠹ Searching for files...
+[K[1A[K[?25l⠸ Searching for files...
+[K[1A[K[?25l⠼ Searching for files...
+[K[1A[K[?25l⠴ Searching for files...
+[K[1A[K[?25l⠦ Collect file... (45/183) src/main/java/com/myjavaworld/gui/SingleLineDocument.java
+[K[1A[K[?25l⠧ Processing files...
+[K[1A[K[?25l⠇ Processing files...
+[K[1A[K[?25l⠏ Processing files...
+[K[1A[K[?25l⠋ Processing files...
+[K[1A[K[?25l⠙ Processing files...
+[K[1A[K[?25l⠹ Processing files...
+[K[1A[K[?25l⠸ Processing files...
+[K[1A[K[?25l⠼ Processing files...
+[K[1A[K[?25l⠴ Processing file... (1/183) src/main/java/com/myjavaworld/gui/DefaultLargeTheme.java
+[K[1A[K[?25l⠦ Processing file... (5/183) src/main/java/com/myjavaworld/gui/GreenMetalLargeTheme.java
+[K[1A[K[?25l⠧ Processing file... (12/183) src/main/java/com/myjavaworld/gui/IndentIcon.java
+[K[1A[K[?25l⠇ Processing file... (18/183) src/main/java/com/myjavaworld/gui/MDefaultRenderer.java
+[K[1A[K[?25l⠏ Processing file... (38/183) src/main/java/com/myjavaworld/gui/MTableHeaderRenderer.java
+[K[1A[K[?25l⠋ Processing file... (70/183) src/main/java/com/myjavaworld/jftp/actions/NewRemoteFileAction.java
+[K[1A[K[?25l⠙ Processing file... (89/183) src/main/java/com/myjavaworld/jftp/ssl/JFTPTrustManager.java
+[K[1A[K[?25l⠹ Processing file... (99/183) src/main/java/com/myjavaworld/jftp/DownloadAndUnzipDlg.java
+[K[1A[K[?25l⠸ Processing file... (110/183) src/main/java/com/myjavaworld/jftp/HelpMenu.java
+[K[1A[K[?25l⠼ Processing file... (125/183) src/main/java/com/myjavaworld/jftp/LocalFileComparator.java
+[K[1A[K[?25l⠴ Processing file... (142/183) src/main/java/com/myjavaworld/jftp/RemoteFileComparator.java
+[K[1A[K[?25l⠦ Processing file... (154/183) src/main/java/com/myjavaworld/jftp/SoftwareUpdatePrefsPanel.java
+[K[1A[K[?25l⠧ Writing output file...
+[K[1A[K[?25l⠇ Calculating metrics... (101/183) src/main/java/com/myjavaworld/jftp/DnDTransferHandler.java
+[K[1A[K[?25l⠏ Calculating metrics... (183/183) src/main/java/com/myjavaworld/jftp/JFTPConstants.java
+[K[1A[K[?25l⠋ Calculating metrics... (183/183) src/main/java/com/myjavaworld/jftp/JFTPConstants.java
+[K[1A[K[?25l⠙ Calculating metrics... (183/183) src/main/java/com/myjavaworld/jftp/JFTPConstants.java
+[K[1A[K[?25l✔ Packing completed successfully!
+[?25h
+📈 Top 5 Files by Token Count:
+──────────────────────────────
+1.  src/main/java/com/myjavaworld/jftp/FTPSession.java (4413 tokens, 18 333 chars, 4.5%)
+2.  src/main/java/com/myjavaworld/jftp/JFTP.java (2948 tokens, 12 330 chars, 3%)
+3.  src/main/java/com/myjavaworld/jftp/FavoritePropertiesDlg.java (2787 tokens, 10 897 chars, 2.8%)
+4.  src/main/java/com/myjavaworld/jftp/ConnectionDlg.java (2676 tokens, 10 523 chars, 2.7%)
+5.  src/main/java/com/myjavaworld/jftp/RemoteFilePropertiesDlg.java (2333 tokens, 8673 chars, 2.4%)
+
+🔎 Security Check:
+──────────────────
+✔ No suspicious files detected.
+
+
+📊 Pack Summary:
+────────────────
+  Total Files: 183 files
+ Total Tokens: 98 693 tokens
+  Total Chars: 392 261 chars
+       Output: /tmp/claude-1000/-home-labuser-jftp/06d60afd-1e6a-4918-989a-f55739aca7c5/scratchpad/repomix/jftp.compressed-nocomments.xml
+     Security: ✔ No suspicious files detected
+
+🎉 All Done!
+Your repository has been successfully packed.
+
+💡 Repomix is now available in your browser! Try it at https://repomix.com

@@ -1,0 +1,12 @@
+[graphify extract] --force: full re-scan, semantic cache reads skipped
+[graphify extract] scanning /tmp/claude-1000/-home-labuser-jftp/06d60afd-1e6a-4918-989a-f55739aca7c5/scratchpad/graph/src-head
+[graphify extract] --code-only: skipping 193 non-code file(s) (96 docs, 0 papers, 97 images) — no LLM extraction
+[graphify extract] found 184 code, 0 docs, 0 papers, 0 images
+[graphify extract] 188 file(s) not classified (no supported extension or shebang), skipped: .gitkeep, AboutDlg.properties, AboutDlg_de.properties, AboutDlg_zh_TW.properties, AdvancedConnectionPrefsPanel.properties, AdvancedConnectionPrefsPanel_de.properties (+182 more)
+[graphify extract] AST extraction on 184 code files...
+  AST extraction: 100/184 uncached files (54%) [4 workers]
+  AST extraction: 184/184 uncached files (100%) [4 workers]
+  warning: 4 code file(s) yielded no symbols (0.01 MB) — a data file, or source this extractor models no symbols for: pom.xml, src/main/java/com/myjavaworld/gui/package-info.java, src/main/java/com/myjavaworld/jftp/package-info.java, src/main/java/com/myjavaworld/util/package-info.java
+[graphify extract] wrote /tmp/claude-1000/-home-labuser-jftp/06d60afd-1e6a-4918-989a-f55739aca7c5/scratchpad/graph/out/graphify-out/graph.json: 2249 nodes, 7299 edges, 118 communities
+[graphify extract] wrote /tmp/claude-1000/-home-labuser-jftp/06d60afd-1e6a-4918-989a-f55739aca7c5/scratchpad/graph/out/graphify-out/.graphify_analysis.json
+[graphify extract] next: run `graphify cluster-only /tmp/claude-1000/-home-labuser-jftp/06d60afd-1e6a-4918-989a-f55739aca7c5/scratchpad/graph/out` to generate GRAPH_REPORT.md and name communities
