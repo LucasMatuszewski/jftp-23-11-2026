@@ -106,6 +106,10 @@
 				<configuration>
 					<source>1.5</source>
 					<target>1.5</target>
+					<excludes>
+						<!-- Unreferenced legacy adapter; needs Apple-only com.apple.eawt. OSXAdapter (reflective) is the live one. -->
+						<exclude>com/myjavaworld/jftp/OSXAdapterOld.java</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 			<plugin>
