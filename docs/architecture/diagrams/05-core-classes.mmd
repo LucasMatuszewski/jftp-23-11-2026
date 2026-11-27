@@ -1,0 +1,56 @@
+classDiagram
+    direction LR
+    class JFTP {
+        <<MFrame>>
+        +JFTPPreferences prefs$
+        +File DATA_HOME$
+        +newSession()
+        +getCurrentSession() FTPSession
+        +exit()
+    }
+    class SessionPanel {
+        <<JRootPane>>
+        +setBusy(boolean)
+    }
+    class FTPSession {
+        +connect(RemoteHost)
+        +reconnect()
+        +download()
+        +upload()
+        +setAbortFlag(boolean)
+        +closeSession()
+    }
+    class LocalPane
+    class RemotePane
+    class LocalFileTableModel
+    class RemoteFileTableModel
+    class DnDTransferHandler
+    class RemoteHost {
+        <<Serializable>>
+    }
+    class Favorite
+    class FavoritesManager {
+        +getFavorites()$ List
+        +saveFavorites(List)$
+    }
+    class FileChangeMonitor
+    class FTPClient {
+        <<external ftpapi>>
+    }
+    class JFTPPreferences {
+        <<Serializable>>
+    }
+    JFTP "1" o-- "*" FTPSession : session tabs
+    SessionPanel <|-- FTPSession
+    FTPSession *-- LocalPane
+    FTPSession *-- RemotePane
+    FTPSession --> FTPClient : reflective instance
+    FTPSession --> RemoteHost : current host
+    FTPSession *-- FileChangeMonitor
+    LocalPane *-- LocalFileTableModel
+    RemotePane *-- RemoteFileTableModel
+    LocalPane ..> DnDTransferHandler
+    RemotePane ..> DnDTransferHandler
+    RemoteHost <|-- Favorite
+    FavoritesManager ..> Favorite : persists list
+    JFTP ..> JFTPPreferences : static prefs

@@ -1,0 +1,21 @@
+flowchart LR
+    subgraph Home["💾 user.home / .jftp / data"]
+        P[("⚙️ preferences.ser<br/>Java serialization")]
+        F[("⭐ favorites.ser<br/>SealedObject, encrypted list")]
+        SK[("🔐 serverCertificates.jks<br/>trusted server certs")]
+        CK[("🔑 clientCertificates.jks<br/>client keys")]
+    end
+    J["🪟 JFTP<br/>load at class init, save on exit"] --> P
+    FM["⭐ FavoritesManager"] --> F
+    KS["🔐 KeyStoreManager (JKS)"] --> SK
+    KS --> CK
+    TM["🛡️ JFTPTrustManager<br/>warns on untrusted, expired, host mismatch"] -->|"reads trusted certs"| SK
+    KM["🔑 JFTPKeyManager"] --> CK
+    Mon["👁️ FileChangeMonitor<br/>1 s Timer on temp files"] -.->|"changed → confirm upload"| Up["⬆️ FTPSession upload"]
+
+    classDef store fill:#E6E6FA,stroke:#333,stroke-width:2px,color:#00008B
+    classDef comp fill:#90EE90,stroke:#333,stroke-width:2px,color:#006400
+    classDef sec fill:#FFD700,stroke:#333,stroke-width:2px,color:#000000
+    class P,F,SK,CK store
+    class J,FM,Mon,Up comp
+    class KS,TM,KM sec

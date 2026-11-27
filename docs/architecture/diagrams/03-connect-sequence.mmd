@@ -1,0 +1,34 @@
+sequenceDiagram
+    autonumber
+    actor U as 👤 User
+    participant A as 🎯 ConnectAction
+    participant Dlg as 🗂️ ConnectionDlg
+    participant S as 🔄 FTPSession
+    participant W as ⚙️ SwingWorker thread
+    participant T as 🔐 JFTPTrustManager
+    participant C as 📦 FTPClient (ftpapi)
+    participant Srv as 🖧 FTP server
+    U->>A: Connect
+    A->>Dlg: modal dialog with RemoteHost defaults from prefs
+    Dlg-->>A: RemoteHost or null
+    A->>S: connect(remoteHost)
+    S->>S: confirm and disconnect if already connected
+    S->>W: start() with busy UI
+    W->>C: Class.forName(client class).newInstance()
+    opt SSL usage is not none
+        W->>C: setSSLContext(JFTP key + trust managers)
+    end
+    W->>C: connect(host, port) then login(user, password, account)
+    C->>Srv: control connection
+    opt FTPS handshake
+        C->>T: checkServerTrusted(chain)
+        alt untrusted chain, expired date or host mismatch
+            T->>U: SecurityWarningDlg
+            U-->>T: accept or decline
+            Note over T: Decline throws CertificateException<br/>Accept applies to this handshake only
+        end
+    end
+    W->>C: run saved commands, set initial dir, list()
+    Note over W: FTPException and ConnectionException are routed to session handlers
+    W-->>S: finished() posted to EDT
+    S->>S: remotePane.setData, updateTitle, set local dir

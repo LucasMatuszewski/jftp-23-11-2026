@@ -1,0 +1,44 @@
+flowchart TD
+    User([👤 User])
+    subgraph App["🖥️ jFTP desktop process (Java Swing)"]
+        Frame["🪟 JFTP main frame<br/>menus · toolbar · session tabs"]
+        Actions["🎯 Actions<br/>Connect · Download · Upload · Abort …"]
+        Session["🔄 FTPSession (one per tab)<br/>SwingWorker jobs"]
+        Panes["📂 LocalPane · 🌐 RemotePane<br/>table models · drag &amp; drop"]
+        Dialogs["🗂️ Dialogs &amp; preference panels"]
+        Prefs["⚙️ JFTPPreferences"]
+        Fav["⭐ FavoritesManager"]
+        SSL["🔐 SSL: KeyStoreManager<br/>trust / key managers"]
+        Zip["🗜️ Zip / Unzip"]
+        I18n["🌍 ResourceLoader bundles<br/>❓ JavaHelp"]
+    end
+    FtpApi["📦 ftpapi jar (external)<br/>FTPClient · ListParser"]
+    Server[("🖧 FTP / FTPS server")]
+    Disk[("💾 ~/.jftp/data<br/>prefs · favorites · keystores")]
+    Update["🌐 update.properties (HTTP)"]
+
+    User --> Frame
+    Frame --> Actions --> Session
+    Session --> Panes
+    Actions --> Dialogs
+    Actions --> Zip
+    Session -->|"reflective client"| FtpApi --> Server
+    Session --> SSL
+    Prefs --> Disk
+    Fav --> Disk
+    SSL --> Disk
+    Dialogs --> Prefs
+    Dialogs --> Fav
+    Frame -.->|"optional check"| Update
+    Frame --> I18n
+
+    classDef ui fill:#87CEEB,stroke:#333,stroke-width:2px,color:#00008B
+    classDef core fill:#90EE90,stroke:#333,stroke-width:2px,color:#006400
+    classDef sec fill:#FFD700,stroke:#333,stroke-width:2px,color:#000000
+    classDef ext fill:#E6E6FA,stroke:#333,stroke-width:2px,color:#000000
+    classDef actor fill:#FFFFFF,stroke:#333,stroke-width:2px,color:#000000
+    class Frame,Panes,Dialogs,I18n ui
+    class Actions,Session,Prefs,Fav,Zip core
+    class SSL sec
+    class FtpApi,Server,Disk,Update ext
+    class User actor

@@ -1,0 +1,24 @@
+flowchart TD
+    Start([🖱️ Download action]) --> Conn{🔌 Session connected?}
+    Conn -->|No| Stop([⏹️ Ignore])
+    Conn -->|Yes| Sel{📋 Remote files selected?}
+    Sel -->|No| Stop
+    Sel -->|Yes| Busy["⏳ abort=false, setBusy(true)<br/>start SwingWorker"]
+    Busy --> Loop{🔁 Next item?<br/>connected and not aborted}
+    Loop -->|Done or aborted| List["📂 list local directory"]
+    Loop -->|Item| Kind{📁 Directory?}
+    Kind -->|File| File["⬇️ client.download(source, target)<br/>status bar progress"]
+    Kind -->|Directory| Dir["📁 create local dir, list remote<br/>recurse into children"]
+    Dir --> Loop
+    File --> Loop
+    List --> Fin["✅ finished() on EDT<br/>localPane.setData, setBusy(false)"]
+    Abort(["🛑 AbortAction"]) -.->|"setAbortFlag(true)<br/>client.abort() in own worker"| Loop
+
+    classDef start fill:#90EE90,stroke:#333,stroke-width:2px,color:#006400
+    classDef decision fill:#FFD700,stroke:#333,stroke-width:2px,color:#000000
+    classDef work fill:#87CEEB,stroke:#333,stroke-width:2px,color:#00008B
+    classDef stop fill:#FFB6C1,stroke:#DC143C,stroke-width:2px,color:#000000
+    class Start,Fin start
+    class Conn,Sel,Loop,Kind decision
+    class Busy,File,Dir,List work
+    class Stop,Abort stop

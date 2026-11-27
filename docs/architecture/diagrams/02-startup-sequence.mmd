@@ -1,0 +1,28 @@
+sequenceDiagram
+    autonumber
+    participant M as 🚀 main()
+    participant App as 🧩 JFTPApplication
+    participant J as 🪟 JFTP (class + frame)
+    participant D as 💾 ~/.jftp/data
+    participant S as 🔄 FTPSession
+    M->>App: new JFTPApplication()
+    Note over App: Runs on the main thread, not via invokeLater
+    App->>J: first access to JFTP.prefs
+    activate J
+    J->>D: loadPreferences() reads preferences.ser
+    alt file missing
+        J->>D: save default JFTPPreferences
+    end
+    J->>J: updateProxySettings()
+    deactivate J
+    App->>App: Locale.setDefault(prefs locale)
+    App->>App: setLookAndFeel(prefs L&F), errors ignored
+    Note over App: Splash window and license prompt are commented out
+    App->>J: new JFTP() builds menus, toolbar, tabs
+    opt macOS
+        App->>J: OSXAdapter.enableFullScreenMode
+    end
+    App->>J: setVisible(true)
+    J-->>J: windowOpened → optional AutoUpdater
+    App->>J: newSession()
+    J->>S: new FTPSession(this), added as a tab
